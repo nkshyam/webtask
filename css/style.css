@@ -126,7 +126,7 @@ body {
     background-color: rgb(113, 112, 112);
     border-radius: 50px;
     padding: 1px 0px 1px 5px;
-    width: 40%;
+    width: 50%;
     font-size: 0.8rem;
 }
 
@@ -251,7 +251,57 @@ body {
     height: 1.4%;
     border-radius: 100%;
 }
-
+.carousel-item{
+    position: relative;
+}
+.carousel-content {
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    width: 100%;
+    height: 100%; 
+  }
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1; 
+  }
+  .carousel-item img {
+    position: relative; 
+    z-index: 0;
+  }
+  .carousel-heading {
+    position: absolute;
+    z-index: 2;
+    font-size: .8rem; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: rgb(99, 1, 1);
+    margin-top: 15%;
+  }
+  .carousel-heading2{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 1.6rem; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 19%;
+  }
+  .play-icon{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 25%;
+  }
 
 /* section 3 */
 
@@ -333,7 +383,7 @@ body {
 
 .section-4 {
     width: 100%;
-    height: 50%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
